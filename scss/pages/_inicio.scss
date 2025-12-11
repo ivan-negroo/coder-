@@ -1,0 +1,50 @@
+@use "../base/variables" as*;
+@use "../base/mixins" as*;
+
+.inicio-i {
+    width: 100%;
+    text-align: center;
+    padding: 50px 25px;
+    background-color: $color-rosa-fondo;
+
+
+    img {
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        border-radius: 12px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.15rem;
+        line-height: 1.7;
+    }
+
+    /*mobile*/
+    @include mobile {
+        padding: 28px 15px;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            padding: 0 5px;
+            line-height: 1.6;
+        }
+    }
+
+    /*tablet*/
+    @include tablet {
+        padding: 60px 25px;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

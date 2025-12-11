@@ -4,35 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Nails By Co / Ubicación </title>
+    <meta name="description"
+        content="Estudio de uñas ubicado en Ramos Mejia. Un espacio comodo y calido para disfritar de un servicio profesional y exclusivo">
+    <meta name="keywords" content="UÑAS, MANICURA, DISEÑO, ESTETICA, RAMOS MEJIAS, BELLEZA">
+    <!--logo solapa-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icono.jpeg">
+    <!--boostrop-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--scss-->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body>
+<body class="principal">
     <header>
         <h1>nails by co</h1>
 
-        <div class="btn-group" role="group" aria-label="Navegación principal">
-            <a href="../index.html" class="btn btn-outline-primary">Inicio</a>
-            <a href="servicios.html" class="btn btn-outline-primary">Servicios</a>
-            <a href="ubicacion.html" class="btn btn-outline-primary">Ubicación</a>
-            <a href="reservar.html" class="btn btn-outline-primary">Reservar</a>
-            <a href="mistrabajos.html" class="btn btn-outline-primary">Mis trabajos</a>
-        </div>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-elegante">
+            <div class="container-fluid">
 
-    <section class="ubicaion-maps">
-        <h2>ubicacion</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1762987819210!6m8!1m7!1sPrGJrz_nSl7NcokiU_G5iA!2m2!1d-34.6423401299246!2d-58.56382539751424!3f102.96526768832983!4f2.4789386051455864!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <footer>
-        <h3>bolivar 210, ramos mejias</h3>
-        <p>a una cudra de av de mayo y a 2 cuadras de av rivadavia</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navElegante">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navElegante">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mistrabajos.html">Mis trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservar.html">Reservar turno</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main class="ubicacion">
+        <section>
+            <h2>ubicación</h2>
+            <p>Encontrame fácilmente y disfrutá de un espacio cómodo, cuidado y pensado para vos. </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1762987819210!6m8!1m7!1sPrGJrz_nSl7NcokiU_G5iA!2m2!1d-34.6423401299246!2d-58.56382539751424!3f102.96526768832983!4f2.4789386051455864!5f0.7820865974627469"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <strong>bolívar 210, ramos mejías</strong>
+            <em>Al llegar, vas a encontrar un ambiente cálido, privado y preparado para brindarte una atención
+                personalizada. Te esperamos para vivir una experiencia de belleza única, donde cada detalle está pensado
+                para vos. </em>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <h3 class="footer-title">nails by co</h3>
+        <p class="footer-copy">© 2025 <span class="first-word">-ramos mejías- buenos aires</span></p>
+        <a href="https://www.instagram.com/_nailsbyco/" class="ubicacion-link">Instagram</a>
+        <a href="https://wa.me/541132586434?text=Hola%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F%20Quisiera%20reservar%20un%20turno.%20%C2%BFTen%C3%A9s%20disponibilidad%3F"
+            class="ubicacion-link">WhatsApp</a>
     </footer>
 
 
 </body>
+<!--boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
 
 </html>

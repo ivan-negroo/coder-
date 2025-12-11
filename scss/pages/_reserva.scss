@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.reserva {
+    background-color: $color-rosa-fondo;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px 25px;
+
+    .reserva-card {
+        background-color: $color-rosa-fondo;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid $color-dorado;
+        color: $color-texto;
+        margin-bottom: 20px;
+    }
+
+    /*mobile */
+    @include mobile {
+        padding: 30px 15px;
+
+        .reserva-card {
+            padding: 18px;
+        }
+    }
+
+    /* desktop*/
+    @include desktop {
+        max-width: 760px;
+    }
+}
+

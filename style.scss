@@ -1,0 +1,15 @@
+@use "scss/base/variables"as *;
+@use "scss/base/mixins" as *;
+@use "scss/base/reset";
+
+@use "scss/layout/main";
+@use "scss/layout/footer";
+@use "scss/layout/header";
+
+
+@use "scss/pages/inicio";
+@use "scss/pages/mistrabajos";
+@use "scss/pages/reserva";
+@use "scss/pages/servicios";
+@use "scss/pages/ubicacion";
+

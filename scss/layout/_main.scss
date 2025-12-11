@@ -1,0 +1,59 @@
+@use "../base/variables" as*;
+@use "../base/mixins" as*;
+
+main {
+    width: 100%;
+    background-color: $color-rosa-fondo;
+    text-align: center;
+    padding: 20px;
+    
+
+
+
+    img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: $color-dorado;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        font-family: $fuente-elegante;
+        text-decoration: underline;
+        text-transform: capitalize;
+
+        @include desktop {
+            font-size: 2.4rem;
+        }
+
+        @include mobile {
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+        }
+
+    }
+
+
+
+    p {
+        color: $color-texto;
+        font-size: 1.2rem;
+        font-family: $fuente-elegante;
+        text-align: center;
+
+        &::first-letter {
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+
+    strong {
+        color: $color-texto;
+        font-family: $fuente-principal ;
+        text-transform: uppercase;
+    }
+}

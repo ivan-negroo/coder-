@@ -19,14 +19,12 @@ main {
   text-align: center;
   padding: 20px;
 }
-
 main img {
   width: 100%;
   max-width: 450px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
-
 main h2 {
   font-size: 2rem;
   color: #d4af37;
@@ -36,7 +34,6 @@ main h2 {
   text-decoration: underline;
   text-transform: capitalize;
 }
-
 @media (min-width: 1024px) {
   main h2 {
     font-size: 2.4rem;
@@ -54,12 +51,10 @@ main p {
   font-family: "Playfair Display", serif;
   text-align: center;
 }
-
 main p::first-letter {
   font-size: 2em;
   text-transform: uppercase;
 }
-
 main strong {
   color: #2a2a2a;
   font-family: "Roboto", sans-serif;
@@ -78,7 +73,6 @@ main strong {
   box-shadow: 0 -2px 0 0 #d4af37;
   /* Móvil */
 }
-
 .main-footer .footer-title {
   color: #d4af37;
   margin-bottom: 12px;
@@ -87,7 +81,6 @@ main strong {
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
 }
-
 @media (max-width: 576px) {
   .main-footer .footer-title {
     font-size: 1.5rem;
@@ -98,7 +91,6 @@ main strong {
   color: #2a2a2a;
   font-size: 16px;
 }
-
 @media (max-width: 576px) {
   .main-footer .footer-copy {
     font-size: 14px;
@@ -107,19 +99,16 @@ main strong {
 .main-footer .footer-copy .first-word {
   text-transform: capitalize;
 }
-
 .main-footer .ubicacion-link {
   color: #d4af37;
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .main-footer .ubicacion-link:hover {
   text-decoration: underline;
   color: #7d6516;
 }
-
 @media (max-width: 576px) {
   .main-footer .ubicacion-link {
     font-size: 15px;
@@ -130,6 +119,7 @@ main strong {
     padding: 20px 10px;
   }
 }
+
 header {
   width: 100%;
   padding: 20px;
@@ -137,7 +127,6 @@ header {
   text-align: center;
   position: relative;
 }
-
 header::after {
   content: "";
   display: block;
@@ -147,7 +136,6 @@ header::after {
   background-color: #d4af37;
   margin: 18px auto 0;
 }
-
 @media (max-width: 576px) {
   header::after {
     width: 100px;
@@ -163,7 +151,6 @@ header h1 {
   font-weight: 800;
   animation: fadeGlow 2s ease-in-out infinite alternate;
 }
-
 @media (max-width: 576px) {
   header h1 {
     font-size: 2.2rem;
@@ -179,7 +166,6 @@ header nav {
   margin: 15px auto 0;
   gap: 24px;
 }
-
 header nav .nav-link {
   color: #d4af37;
   font-size: 1.1rem;
@@ -188,12 +174,10 @@ header nav .nav-link {
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
 }
-
 header nav .nav-link:hover {
   color: #7d6516;
   transform: translateY(-3px);
 }
-
 @media (max-width: 576px) {
   header nav {
     gap: 14px;
@@ -208,6 +192,7 @@ header nav .nav-link:hover {
     font-size: 1.3rem;
   }
 }
+
 @keyframes fadeGlow {
   0% {
     text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
@@ -226,7 +211,6 @@ header nav .nav-link:hover {
   /*mobile*/
   /*tablet*/
 }
-
 .inicio-i img {
   width: 100%;
   max-width: 650px;
@@ -235,14 +219,12 @@ header nav .nav-link:hover {
   margin: 0 auto 20px;
   display: block;
 }
-
 .inicio-i p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.15rem;
   line-height: 1.7;
 }
-
 @media (max-width: 576px) {
   .inicio-i {
     padding: 28px 15px;
@@ -264,6 +246,7 @@ header nav .nav-link:hover {
     font-size: 1.2rem;
   }
 }
+
 /* sección mis trabajos */
 .mistrabajos {
   text-align: center;
@@ -274,7 +257,6 @@ header nav .nav-link:hover {
   /* responsive: en móviles 1 columna */
   /*tablet*/
 }
-
 .mistrabajos .galeria {
   width: -moz-fit-content;
   width: fit-content;
@@ -285,19 +267,17 @@ header nav .nav-link:hover {
   gap: 25px;
   padding-bottom: 20px;
 }
-
 .mistrabajos .galeria img {
   width: 100%;
   height: 260px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
   border: 2px solid rgba(212, 175, 55, 0.18);
   cursor: pointer;
   display: block;
   transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1), filter 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
-
 .mistrabajos .galeria img:hover {
   transform: scale(1.07);
   filter: brightness(1.18);
@@ -305,7 +285,6 @@ header nav .nav-link:hover {
   border-color: rgba(212, 175, 55, 0.6);
   z-index: 2;
 }
-
 @media (max-width: 576px) {
   .mistrabajos {
     padding: 30px 15px;
@@ -323,6 +302,7 @@ header nav .nav-link:hover {
     height: 280px;
   }
 }
+
 .reserva {
   background-color: #f8cce0;
   text-align: center;
@@ -332,7 +312,6 @@ header nav .nav-link:hover {
   /*mobile */
   /* desktop*/
 }
-
 .reserva .reserva-card {
   background-color: #f8cce0;
   padding: 22px;
@@ -341,7 +320,6 @@ header nav .nav-link:hover {
   color: #2a2a2a;
   margin-bottom: 20px;
 }
-
 @media (max-width: 576px) {
   .reserva {
     padding: 30px 15px;
@@ -355,6 +333,7 @@ header nav .nav-link:hover {
     max-width: 760px;
   }
 }
+
 .section {
   text-align: center;
   max-width: 650px;
@@ -363,7 +342,6 @@ header nav .nav-link:hover {
   /*carta de servicios y precios para ir actualizando*/
   /*mobile*/
 }
-
 .section .servicio-card {
   background-color: #f8cce0;
   padding: 22px;
@@ -372,14 +350,12 @@ header nav .nav-link:hover {
   border: 1px solid #d4af37;
   color: #2a2a2a;
 }
-
 .section .servicio-card li {
   margin-bottom: 8px;
   text-align: center;
   text-transform: capitalize;
   list-style-position: inside;
 }
-
 @media (max-width: 576px) {
   .section {
     padding: 30px 15px;
@@ -390,6 +366,7 @@ header nav .nav-link:hover {
     max-width: 760px;
   }
 }
+
 .ubicacion {
   text-align: center;
   padding: 40px 25px;
@@ -397,28 +374,23 @@ header nav .nav-link:hover {
   margin: 0 auto;
   background-color: #f8cce0;
 }
-
 .ubicacion h2 {
   text-transform: capitalize;
 }
-
 .ubicacion iframe {
   width: 100%;
   height: 350px;
   border: 2px solid #d4af37;
   border-radius: 12px;
 }
-
 .ubicacion strong {
   text-transform: capitalize;
 }
-
 .ubicacion em {
   display: block;
   color: #2a2a2a;
   font-family: "Playfair Display", serif;
 }
-
 @media (max-width: 576px) {
   .ubicacion {
     padding: 30px 15px;
@@ -442,6 +414,4 @@ header nav .nav-link:hover {
   .ubicacion iframe {
     height: 420px;
   }
-} 
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

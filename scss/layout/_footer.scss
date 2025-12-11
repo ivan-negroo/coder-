@@ -1,0 +1,68 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as*;
+
+
+.main-footer {
+    width: 100%;
+    background-color: $color-rosa-footer;
+    color: $color-dorado;
+    padding: 25px 40px 30px;
+    text-align: center;
+    font-family: $fuente-elegante;
+    margin-bottom: 30px;
+
+    /* Línea dorada separadora del body */
+    box-shadow: 0 -2px 0 0 $color-dorado;
+
+    .footer-title {
+        color: $color-dorado;
+        margin-bottom: 12px;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: $fuente-elegante;
+        text-transform: capitalize;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+
+    .footer-copy {
+        margin: 6px 0;
+        color: $color-texto;
+        font-size: 16px;
+
+        @include mobile {
+            font-size: 14px;
+        }
+
+        .first-word {
+            text-transform: capitalize;
+        }
+    }
+
+    .ubicacion-link {
+        color: $color-dorado;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-dorado-oscuro;
+        }
+
+        @include mobile {
+            font-size: 15px;
+        }
+    }
+
+
+    /* Móvil */
+    @media (max-width: 480px) {
+
+        padding: 20px 10px;
+
+
+    }
+}

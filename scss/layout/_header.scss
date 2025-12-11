@@ -1,0 +1,93 @@
+@use"../base/variables" as *;
+@use "../base/mixins" as *;
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: $color-rosa-fondo;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 850px;
+        max-width: 90%;
+        height: 1px;
+        background-color: $color-dorado;
+        margin: 18px auto 0;
+    }
+
+    @include mobile {
+        &::after {
+            width: 100px;
+        }
+    }
+
+
+    h1 {
+        color: $color-dorado;
+        font-family: $fuente-elegante;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        margin: 0;
+        font-weight: 800;
+        animation: fadeGlow 2s ease-in-out infinite alternate;
+
+        @include mobile {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: 15px auto 0;
+        gap: 24px;
+
+        .nav-link {
+            color: $color-dorado;
+            font-size: 1.1rem;
+            padding: 8px 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                color: $color-dorado-oscuro;
+                transform: translateY(-3px);
+            }
+        }
+
+        @include mobile {
+            gap: 14px;
+
+            .nav-link {
+                font-size: 1rem;
+                padding: 10px 12px;
+            }
+        }
+
+        @include tablet {
+            .nav-link {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@keyframes fadeGlow {
+    0% {
+        text-shadow: 0 0 5px rgba($color-dorado, 0.3);
+        opacity: 0.8;
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba($color-dorado, 0.8);
+        opacity: 1;
+    }
+}

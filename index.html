@@ -2,37 +2,68 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nail By co/ Belleza en tus uñas</title>
+    <meta name="description" content="Manicura presional,realza tu belleza de tus manos con nuestro servicio de uñas">
+    <meta name="keywords" content="UÑAS, MANICURA, DISEÑO, ESTETICA, RAMOS MEJIAS, BELLEZA">
+    <!--logo solapa-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icono.jpeg">
+    <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--scss-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <!--botonera principal-->
-<body>
-    <header>
-        <h1>nails by co</h1>
 
-        <div class="btn-group" role="group" aria-label="Navegación principal">
-            <a href="../index.html" class="btn btn-outline-primary">Inicio</a>
-            <a href="./pages/servicios.html" class="btn btn-outline-primary">Servicios</a>
-            <a href="./pages/ubicacion.html" class="btn btn-outline-primary">Ubicación</a>
-        </div>
+<body class="principal">
+    <header>
+        <h1>Nails By Co</h1>
+
+        <nav class="navbar navbar-expand-lg navbar-elegante">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navElegante">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navElegante">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/mistrabajos.html">Mis trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/reservar.html">Reservar turno</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </header>
     <!--informacion importante-->
-    <section >
-        <img src="assets/img/principal.jpeg" class="img-thumbnail" alt="belleza en tus uñas">
+    <main class="inicio-i">
         <h2>belleza en tus uñas</h2>
-        <p>descubre nuestros servicios de manicura</p>
-    </section>
-    <footer>
-        <div>
-        <a href="./pages/reservar.html" class="btn btn-outline-primary">Reservar</a>
-        <a href="./pages/mistrabajos.html" class="btn btn-outline-primary">Mis trabajos</a>
+        <div class="pie-foto">
+            <img src="assets/img/principal.700.jpg" class="img-thumbnail" alt="belleza en tus uñas">
+            <p>Cada detalle cuenta. En Nails by Co, transformamos tus manos en una expresión de estilo, belleza y
+                seguridad. Disfrutá de un momento pensado exclusivamente para vos, donde la calidad, el diseño y el
+                cuidado se unen para realzar tu feminidad. Permitite brillar con uñas que hablan por vos.</p>
         </div>
-    </footer>
 
+    </main>
+    <footer class="main-footer">
+        <h3 class="footer-title">nails by co</h3>
+        <p class="footer-copy">© 2025 <span class="first-word">todos</span> los derechos reservados</p>
+        <a href="./pages/reservar.html" class="ubicacion-link">reservar turno</a>
+    </footer>
 </body>
+<!--boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+
 
 </html>
